@@ -1,0 +1,154 @@
+/* Tag to Tag */
+  /* div span{
+    color:rebeccapurple;
+} */
+
+/* Multi Tag to Tag */
+
+ /* div span p{
+  color: red;
+} */
+
+
+
+
+/* Tag to Class  */
+/* div .address{
+  color: red;
+} */
+
+
+/* Multi tag to class */
+
+/* div span .address{
+  color: red;
+} */
+
+
+
+
+/* Multi tag to same class */
+/* div span small.name{
+  color: red;
+} */
+
+
+/* Class to Class  */
+
+/* .blank .money{
+  color: red;
+} */
+
+/* .money .currency{
+  color: red;
+} */
+
+
+/* 
+.blank .currency{
+  color: red;
+} */
+
+/* Multi Class to Class */
+
+/* .blank .money .currency{
+  color: red;
+} */
+
+/* Class To tag  */
+
+/* .container b{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: blue;
+} */
+
+
+/* Clas to Multi Tags  */
+
+/* .container b span{
+  color: red;
+}
+  */
+
+  /* Same Class */
+/* .moblie.jpn{
+  color: red;
+}
+
+.moblie.cn{
+  color: rgb(213, 228, 8);
+}
+
+.moblie.indo{
+  color: rgb(57, 196, 29);
+}
+
+.moblie.us{
+  color: rgb(17, 0, 255);
+} */
+
+/* Class to same Class */
+
+/* .vehicle .car.jpn{
+  color: rgb(255, 0, 0);
+} */
+
+
+/* .vehicle .car.cn{
+  color: rgb(255, 208, 0);
+} */
+
+
+/* .vehicle .car.ido{
+  color: rgb(76, 0, 255);
+} */
+
+/* .vehicle .car.us{
+  color: rgb(0, 255, 0);
+} */
+
+
+/* Class to tag with Group  Selector */
+
+/* .div1 p, .div1 b{
+  color: red;
+} */
+
+
+/* Child Selector */
+
+/* .div2 >p{
+  color: red;
+} */
+
+/* .div3 > i{
+  color: red; 
+} */
+
+/* .div2 > b{
+  color: red;
+}  */
+
+/* .div2 > .div3{
+  color: red;
+} */
+
+
+/* (i) General Sibling Selector (~) */
+/* .div4 ~ b{
+  color: red;
+} */
+
+
+/* (ii) Adjacent Sibling Selector (+) */
+
+.div7 + p{
+  color: red;
+ }  
+
+
+
+
+
+
+

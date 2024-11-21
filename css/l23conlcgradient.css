@@ -1,0 +1,159 @@
+.circle1 ,.circle2, .circle3,.circle4,.circle5,.circle6{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.circle2{
+    background: conic-gradient(
+        blue,green,orange,red
+    )
+
+}
+
+.circle3{
+    background: conic-gradient(
+        blue,green,orange,red
+    )
+}
+
+.circle4{
+    background-image: conic-gradient(
+        rgb(16, 16, 194),
+        rgb(14, 26, 192),
+        rgb(189, 37, 37),
+        rgb(108, 223, 108),
+        rgb(0, 26, 255)
+    );
+}
+
+
+
+.circle5{
+    background: conic-gradient(
+        blue 40%,
+        red 60%
+       
+    );
+}
+
+
+
+
+.circle6{
+    width: 200px;
+    height: 200px;
+   background-color: rebeccapurple;
+}
+
+
+
+.boxone{
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(3, 254, 3);
+
+    display: flex;
+    justify-content: center; /*hz center  */
+    align-items: center; /*vt center*/
+
+ /* display: grid;
+    place-items: center; */
+
+    position: relative;
+}
+    /* can change oppsite side (hz-center to vr-center ) or (ve-center to hz-center ) when add another */
+
+
+.boxone .div1{
+    width: 300px;
+    height: 300px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    /* left:0
+    top:0 */
+    z-index: 1;
+
+    /* display: flex;
+     justify-content: center; */
+    
+}
+
+.boxone .div2{
+    width: 320px;
+    height: 320px;
+    /* background: #ffd500; */
+    /* color: #fff; */
+
+    background-image: conic-gradient(
+        rgb(16, 16, 194),
+        rgb(14, 26, 192),
+        rgb(189, 37, 37),
+        rgb(108, 223, 108),
+        rgb(0, 26, 255)
+    );
+ 
+    
+    color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    /* left: 0; */
+    /* top:0; */
+
+    
+
+    
+}
+
+
+.pointercontainer{
+    width: 20px;
+    height: 200px;
+    /* background-color: rgb(213, 191, 191); */
+    
+
+
+    position: absolute;
+
+
+   z-index: 3;
+
+    animation-name: abc;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+.pointer{
+    width: 20px ;
+    height: 20px;
+    border-radius: 50%;
+
+    background-color: rgb(255, 218, 11);
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+
+
+
+@keyframes abc{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+

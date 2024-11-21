@@ -1,0 +1,55 @@
+.textaling{
+
+        /* text-algin left */
+        /* text-algin right */
+        /* text-algin center*/
+        /* text-algin justify*/
+}
+
+.textdecoration{
+
+    color: rgb(235, 37, 37);
+    /* textdecoration :underline */
+    /* textdecoration:line -throuht */
+    /* text- decoration:loverline */
+   
+}
+
+
+a{
+     text-decoration: none;
+
+}
+
+.textline{
+
+    letter-spacing: 5px;
+
+    /* line-height: 3px; */
+    /* line-height:3 */
+    line-height:2;
+     
+}
+ 
+
+
+.textshadow{
+
+    /* short hand */
+    /* h v b c */
+    /* hoz vtl blur color */
+
+    /* text-shadow;50px; */
+    /* text-shadow: 50p 0 3px red: */
+
+    /* text-shadow: -50px 9 3x red */
+     text-shadow: 00px 5px 3px red
+
+    /* text-shadow:5px 5px 5px red */
+    /* text -shadow: -5px -5px 5px blue */
+ 
+    /* text-shadow:-5px -5px 5px rgb(30, 0, 255);
+
+    text-shadow: 5px -6px  3px rgb(30, 0, 255), 0  5px 3px green; */
+
+}

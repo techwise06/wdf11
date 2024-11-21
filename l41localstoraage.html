@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage</title>
+    </head>
+    <body>
+         <script>
+
+
+             // => Local storage
+
+             // => Create 
+
+            // => Read
+            
+            // => Upaadte
+
+            // => Delete
+
+            // localStorage
+            
+
+            // => Create 
+
+           // localStorage.setItem("name", "aung aung");
+           // localStorage.setItem("age,27");
+           // localStorage.setItem("city", "Yangon");
+ 
+            // =>Upate 
+
+            // Method 1
+            //localStorage.setItem("name", "maung aung");
+
+            // Method 2
+            //localStorage.city( "Magway");
+
+
+                 // => Read
+                        //   Method 1
+
+                    // const getname = localStorage.name;
+                    // const getage = localStorage.age;
+                    // const getcity = localStorage.city;
+
+                    // console.log(getname,getage,getcity);
+
+
+               
+
+
+
+            //Method 2
+
+            // const name =LocalStorage.getItem('name');
+            // const age = LocalStorage.getItem('age');
+            // const city =LocalStorage.getItem('city');
+
+            // console.log(name,age,city);
+            // console.log(typeof name,typeof age, typeof city) //
+
+
+
+             // => Delete
+
+
+
+                    //Method 1 (Single Delet)
+                        // localStorage.removeItem('name');
+                        // localStorage.removeItem('age');
+                        // localStorage.removeItem('city');
+
+
+                    //Method  (All Dlete)
+
+                    //localStorage.clear();
+
+                // ------------------------------------------------------------------
+
+                //Session Storage
+
+                //Create
+
+                    sessionStorage.setItem("name", "aung aung");
+                    sessionStorage.setItem("age","32")
+                    sessionStorage.setItem("city" ,"Yangon"); 
+
+                // => Upate (edit)
+
+                // Method 1
+                     sessionStorage.setItem("name","wai wai");
+
+                    //  Method 2
+
+                    sessionStorage.city = "Bago";
+
+                // => 
+                 //Method 1
+                 const getname = sessionStorage.name;
+                 const getage = sessionStorage.age;
+                 const getcity= sessionStorage.city;
+
+                 console.log(getname,getage,getcity);
+                 console.log(typeof getname,getage,getcity);
+
+                 //Method 2 
+                 const name = sessionStorage.getItem('name');
+                 const age = sessionStorage.getItem('age');
+                 const city = sessionStorage.getItem('city');
+            //     console.log(name,age,city);
+            // console.log(typeof name,typeof age, typeof city) //
+
+
+               // => Delete
+
+
+
+                    //Method 1 (Single Delet)
+                        sessionStorage.removeItem('name');
+                        sessionStorage.removeItem('age');
+                        sessionStorage.removeItem('city');
+
+
+                    // Method  (All Dlete)
+
+                    sessionStorage.clear();
+
+
+
+
+
+
+
+         </script>
+    </body>
+</html>
+
+<!-- 
+Data Base  
+    (i) temp Storage
+    (ii) per storage   (mysql, {mongodb objct})
+    
+
+    -->
+<!-- 
+    sql database (table)
+    no sql database -->
+
+
+<!-- 
+    cookies                                 LocalStorage                          seesionStorage
+    4kb                                     5-10-20 (broswer dependent)            5Mb
+    All Windows                              All windows                           Private to tag
+    whenuser delete /timmer                  When user delete                      close to tag
+    
+    -->
+    <!-- 7DB -->
+    

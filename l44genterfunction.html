@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Generator Function</title>
+    </head>
+
+    <body>
+        <script text="javascript">
+                function test1(){
+                    return 10;
+                }
+                 console.log(test1()); //10
+                 console.log(test1()); //10
+                 console.log(test1()); //10
+                 console.log(test1()); //10
+
+                 function test2(){
+                    var v=1;
+                   v++;
+                    return  v;
+                 }
+
+                 console.log(test2()); // 2
+                 console.log(test2()); // 2
+
+                 console.log(test2()); // 2
+
+                 console.log(test2()); // 2
+
+
+                 var y =1;
+
+                 function test3(){
+                    y++;
+                    return y;
+                 }
+                 console.log(test3()); // 
+                 console.log(test3()); // 2
+
+                 console.log(test3()); // 2
+
+
+                //Genter functiton 
+
+                //yield
+                //next
+
+                // function* => * function နားကပ်ရေးပါ ဒါမှ မှန်ပမယ်
+
+                function* genfun(){
+                    yield 1;
+                    yield 2;
+                    yield 3;
+                    yield 4;
+
+
+
+                }
+
+                //console.log(genfun());
+                // genfun {<suspended>}
+
+               // console.log(genfun().next()); // {value: 1, done: false}
+
+                // console.log(genfun().next().value); //1
+
+                // console.log(genfun().next().value); //1
+                
+                const getgenfun = genfun();
+
+                // console.log(getgenfun); // genfun {<suspended>}
+                // console.log(getgenfun.next()); // {value: 1, done: false}
+                // console.log(getgenfun.next()); // {value: 1, done: false}
+                // console.log(getgenfun.next()); // {value: 1, done: false}
+                // console.log(getgenfun.next()); // {value: 1, done: false}
+
+              console.log(getgenfun.next().value); 
+              console.log(getgenfun.next().value); 
+              console.log(getgenfun.next().value); 
+              console.log(getgenfun.next().value); 
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+             
+
+                
+                    
+
+                
+                
+
+
+
+
+
+
+
+                 
+ 
+        </script>
+    </body>
+</html>

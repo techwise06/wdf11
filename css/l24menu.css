@@ -1,0 +1,34 @@
+nav{
+    width: 1500px ;
+    background-color: steelblue;
+}
+nav ul{
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    width: 250px;
+    height: 50px;
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    line-height: 50px;
+
+    float: left;
+
+    /* border-left: 2px saddlebrown #000; */
+    border-right: 2px solid #000;
+    /* border-top: 2px solid #000; */
+    /* border-bottom: 2px solid #000; */
+    transition: background-color .3;
+}
+
+/* nav ul li */

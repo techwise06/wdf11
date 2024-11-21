@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Intro</title>
+</head>
+<body>
+
+  <div>
+    
+    <h1 id="wel" class="come">Welcome to jQuery</h1>
+    <h1 id="mm" class="mm">Welcome to Myanmar</h1>
+    <h1 id="th" class="th">Welcome to Thailand</h1>
+    <h1 id="slk" class="slk">Welcome to Srilanka</h1>
+    <h1 id="indo" class="indo">Welcome to Indonesia</h1>
+
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+
+  
+  <script type="text/javascript">
+    // console.log('hi');
+    // console.log(document);
+
+    $(document).ready(function(){
+      console.log('hay');
+      console.warn('i am js warn');
+      console.error('hay i am js error');
+
+    
+
+      // window.alert('hay i am js alert');
+
+      // if(window.confirm('Are you sure')){
+      //   console.log('Yes i want to bleh bleh ...');
+      // }else{
+      // console.log('No, i don\'t want to bleh bleh ...');
+      // }
+
+
+      const geth1 = document.getElementById('wel');
+      console.log(geth1);
+
+      // $('tagname');
+      // $('#id');
+      // $('.class');
+
+      // console.log($('h1'));
+
+      // $('h1').fadeOut();
+      // $('h1').fadeOut(1000);
+      $('#indo').fadeOut(2000);
+      $('#th').fadeOut(3000);
+        
+
+      // // speed,opacity
+      // $('#slk').fadeTo (3000.0.5)
+
+
+      });
+
+
+    
+
+  </script>
+</body>
+</html>
+<!-- 11JQ -->

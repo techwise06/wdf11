@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Function</title>
+
+  <style>
+
+        *{
+            box-sizing: border-box;
+        }
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                    align-items: center;
+             
+            }
+
+            .container{
+                width: 300px;
+                background-color: rgb(91, 115, 212);
+                padding: 10px;
+                box-shadow: 2px 2px 5px rgb(0,0,0,0.3 );
+
+            }
+            label{
+                display: block;
+                margin:  10px  0;
+            }
+            .form-control{
+                width: 100%;
+                padding: 5px;
+            }
+
+            .btn{
+                width: 100%;
+                background-color: darkblue;
+                color: #fff;
+                font-size: 19px;
+                border: none;
+
+                padding: 5px;
+                margin-top: 10px;
+            } 
+        </style> 
+    </head>
+    <body>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+
+            <h3> Show Name = <span id = "replacename"></span></h3>
+
+            <form action="" method="">
+
+                <div class="form-group">
+                    <label for = "firstname"> FirstName</label>
+                <input  type="text" name="firstname" id="firstname" class="form-control" placeholder="Enther Username" autocomplete="off" autofocus />
+
+                   </div>
+
+
+                 <div class="form-group">
+				    <label for="lastname"> Last Name  </label>
+				    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Enter last" autocomplete="off" />
+			 </div>
+
+
+
+             <button type="button" class="btn" onclick="getdata()" >  Get Name</button>
+
+            </form>
+        </div>
+        
+         <script type="text/javascript">
+
+
+                // (A) Defult function |System Function
+                    // (B) User  Define Function 
+
+                        // (1) Regular Function
+                            // (i) Munal Function
+                            // (ii) Parmeter Function
+
+                                    // (a) single Parmeter Function
+                                     // (b) Multi Parmeter Function
+
+
+                   
+                    
+                        // (2) Arrow  Function
+                            // (i) Munal Function
+                            // (ii) Parmeter Function
+
+                                    // (a) single Parmeter Function
+                                     // (b) Multi Parmeter Function
+
+
+
+                            // (3) Generator Gunction
+
+
+                    // (i) Munal function
+
+                function greet(){
+                    console.log("Hello Myanmar");
+                    console.log("Hello May ");
+                    console.log("Hello Thailand");
+                }
+
+                greet();
+                greet();
+                greet();
+
+
+                hello(); // 
+
+                function hello(){
+                    console.log("Helllo Yangon"); 
+                }
+
+                function hello (){
+                    console.log("Hello Bago");
+                }
+
+                hello(); // Hello Bago
+
+
+
+
+
+                function funone(){
+                    console.log("i an function one");
+
+
+                    
+                }
+                funone();
+                    
+                function funtwo(){
+                    console.log("i am function two");
+                }
+
+                function funthree(){
+                    console.log("i am function three");
+                }
+                
+    // ----------------------------------------------------------------
+
+
+
+                //RETURN
+
+
+                function funfour(){
+                    console.log(4);
+                }
+
+                function funfive(){
+                    console.log(5);
+                }
+
+                funfour(); //4
+                funfive(); //5
+
+
+                function funsix(){
+                   const num4 = funfour(); 
+                   const num5 = funfive();
+
+
+                   
+                // console.log(num4); //undefinded
+                // console.log(num5); //undefinded
+
+                const total =num4+num5;
+                console.log(total); //NaN
+
+
+                  }
+
+                  funsix();
+
+                  function funseven(){
+                    return 7;
+                    return 8;
+                    return 9;
+                  }
+
+                  console.log(funseven());
+
+
+
+
+
+
+
+
+
+        
+
+
+                // function funeight(){
+                //     const msg1 = "hi";
+                //     const msg2 = "Hello";
+                //     const msg3  = "mee lar lar";
+                //     const msg4 = "I love you";
+
+
+                //     return "blcok"; 
+
+                //     //=> dos
+                //     const num8 = 800
+                //     return num8 ;
+
+                //     // var  num8 ;
+
+                //     return num8 = 8000; 
+
+                //     //don'ts
+
+                //    // return var  num8 ;
+
+                //   //  return var num8 = 80000
+
+                //     console.log(nu)
+
+                // }
+
+                // console.log(funeight());
+
+                // function funnine(){
+                //     return 90;
+
+                // }
+                
+                // function funten(){
+                //     const x =100;
+                //     return x;
+                // }
+
+                // console.log(funnine);
+                // console.log(funten);
+
+
+                // function funeleven (){
+                //     const num1 =funine();
+                //     const num2 = funten();
+
+                //     console.log(num1);
+                //     console.log(num2);
+
+                //     const total = num1+ num2;
+                //     console.log(total);
+                // }
+                // funeleven();
+
+
+
+                // ------------------------
+
+
+
+                //(ii) Parmeter Function
+
+                  // (a) Single Parmeter Function
+
+                  function myfun1 (city){
+                    console.log("Hello" +city);
+                  }
+
+                  myfun1 ();// Helloundefined
+                  myfun1 (" Yangon");
+                  myfun1 ("Mandaly"); 
+                  myfun1 ("Bago","Mawlamyin"); 
+                  myfun1 ("500"); 
+                  
+
+                  //Defult Parmenter
+
+                  function myfun2 (country="Maylysail"){
+
+                  }
+                  myfun1 ();// Helloundefined
+                  myfun1 (" Yangon");
+                  myfun1 ("Mandaly"); 
+                  myfun1 ("Bago","Mawlamyin"); 
+                  myfun1 (); 
+
+
+
+
+                //   --------------------------
+
+
+                
+                //(ii) Parmeter Function        
+
+                    // (b) Multi Parmeter Function
+
+                    
+                    function multifun1 (x,y,z){
+                        console.log(`x vale is ${x} , y value is ${y} , z value is ${z}`);
+                    }
+
+                    multifun1(); //  vale is undefined , y value is undefined , z value is $ {z}
+                    multifun1(10); // x vale is 10 , y value is undefined , z value is undefined
+                    multifun1(10,20);// x vale is 10 , y value is 20 , z value is undefined
+                    multifun1(10, 20,30);// x vale is 10 , y value is 20 , z value is 30
+                    multifun1(10,20,30,40,50);//   x vale is 10 , y value is 20 , z value is 30
+                    
+                    function multifun2(x=1,y=2,z=3){
+                        console.log(`x value is $ {x} y value is $ {y} z value is  $ {z}`);
+                    }
+                    function multifun2 (x=1,y=2,z=3){
+                        console.log(`x value is ${x}, y value is ${y} , z value is ${z}`);
+
+
+                    }
+
+                    multifun2(); // x value is 1, y value is 2 , z value is 3
+                    multifun2(100); // x value is 100, y value is 2 , z value is 3
+                    multifun2(100,200); // x value is 100, y value is 200 , z value is 3
+                    multifun2(100,200,300); //x value is 100, y value is 200 , z value is 300
+
+                    
+
+
+
+
+                    function multifun3(x=1,y=2,z=3){
+                        const result = x+y+z;
+                        return result;
+                    }
+                        console.log(multifun3());
+                        console.log(multifun3(10,20));
+
+
+
+            // ----------------------------------
+
+
+            // Namelses Function
+
+            const infofun = function (name,color){
+                console.log(`My nameis ${name} . I love  ${color} color.`);
+            }
+            infofun("aung ", "black");
+
+
+            // no error 
+
+
+
+
+
+
+            function getdata(){
+             //   console.log("Hello")
+
+                 const getfirstname =document.getElementById('firstname').value;
+
+                 const getlastname = document.getElementById('lastname').value;
+
+                console.log(getfirstname);
+         
+            const getreplacename = document.getElementById('replacename');
+            
+            
+            //console.log(getreplacename);
+
+          // getreplacename.innerText = ` $ {getfirstname} & {getlastname}`;
+
+            // getreplacename.innerHTML =` $ {getfirstname} & {getlastname}`;
+
+            getreplacename.textContent = `${getfirstname} ${getlastname}`;
+
+
+            document.getElementById('firstname').value =" ";
+            document.getElementById('lastname').value =" ";
+            
+            document.getElementById('firstname').focus();
+
+
+
+
+           }
+
+
+        //     done
+
+
+           
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+           
+
+
+         </script>
+    </body>
+</html>
+

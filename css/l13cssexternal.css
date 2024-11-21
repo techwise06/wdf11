@@ -1,0 +1,52 @@
+
+    
+    h2{
+        color: rgb(224, 38, 28);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 10px;
+        font-style: italic;
+        /* Group Selector (,) */
+       
+        }
+
+        h3,h4,h5,h5,h6{
+            background-color: tomato;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 0.8% ;
+            font-style: italic;
+        }
+
+        /* ID selector */
+
+        #my{
+            color: rgb(194, 20, 78);
+            
+        }
+       #wai{
+        color:rgb(255, 153, 0);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        size: 0dvb;
+        padding: 0%;
+
+       }
+
+       #phone,#key,#onwer,#mouse{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        list-style: circle;
+        color: crimson;
+        }
+        
+       #mmm{
+        border: rgb(172, 26, 26);
+        border-top-style: double;
+       }
+       /* class selector */
+       .phone{
+        color: rgb(64, 0, 255);
+       }
+       .fontlg{
+        font-size: 25px;    
+    }
+        
+        
+      

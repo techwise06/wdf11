@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Number Guess  </title>
+        <style>
+            body{
+                font-family: sans-serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+    
+                overflow: hidden;
+            }
+            .container{
+            /* background: linear-gradient(
+                30deg,
+                skyblue,
+                rgb(168, 158, 110),
+                violet
+               
+            ); */
+            background-color: darkcyan;
+
+            padding: 20px;
+                border-style: outset;
+                border-radius: 3px;
+            }
+            body h1{
+                background-color: chocolate;
+                border-radius: 1.2px;
+                box-shadow:  2px black ;
+            }
+    
+            .form-control,.btn{
+                border-style: solid;
+                padding: 10px;
+            }
+
+            .form-control{
+                background-color: rgb(205, 231, 231);
+            }
+            .btn{
+                background-color: skyblue;
+                border-radius: 4px;
+                box-shadow: rgb( 0 0 0 .9);
+                border: none;
+                transition-duration: .2s;
+            }
+
+    
+    
+            .gamefrom span{
+                background-color:slategray ;
+                border-radius: 5px;
+                display: block;
+                margin-top:  2px;
+                padding-right: 30px ;
+            
+            }
+
+            .btn:active{
+                background-color: rgb(218, 64, 64);
+            
+            }
+        </style>
+    </head>
+
+
+
+    <body>
+
+        <div class="container">
+        <h1> Number Guess</h1>    
+
+        <p> Guess a number between  <span class="minnumber">00 </span> to <span class="maxnumber">00</span></p>
+
+
+        <form id="gamefrom" class="gamefrom" action="" method="">
+            <div class="form-group">
+            <input type="number" name="guessnumber" id="guessnumber" class="form-control" placeholder="Enter Your guss number..."  autocomplete=" off" autofocus >  
+
+            <input type="submit" id="btn" class="btn" />
+            </div>
+
+
+            <span class="message1" > </span>
+            
+            <span class="message2" > </span>
+
+        </form>
+        
+        </div>
+        <script src="./js/l48numberguess.js"></script>
+    </body>
+</html>

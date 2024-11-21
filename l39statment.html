@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Statment</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript"> 
+
+
+            // ? statment (ternry opeator) \
+            // cl > c2 ? true: false;
+
+            const x =  100;
+            const y = 200;
+
+            console.log(x > y ?  "Yes,it is true": "no ,it is false"); //Not ,it is false
+              
+            console.log(x < y ?  "Yes,it is true": "no ,it is false"); //"Yes,it is true"
+
+
+            // c > c2 ? true : (cl === c2) ? true : false;
+
+            console.log(x == y ? "X is equal to Y" : (x < y) ?  "X is less than Y" : "X is greather than Y");
+
+            const num1 = 100;
+            const num2 = 200;
+
+            //Check  value 
+            console.log("== equal to result =  " + (num1 == num2 ? "True": "False") );
+            //Check value  / dat  type
+            console.log("=== equal to result =  " + (num1 === num2 ? "True": "False") );
+
+            //Check value
+            console.log("!= equal to result =  " + (num1 == num2 ? "True": "False") );   
+
+            //Check value  /data type
+            console.log("!== equal to result =  " + (num1 == num2 ? "True": "False") );
+
+            console.log("> greater than result = " + (num1 > num2 ? "True" : "False") );
+            console.log(">=  greater than  or equal to result = " + (num1 >= num2 ? "True" : "False") );
+
+            console.log("< less than result = " + (num1 > num2 ? "True" : "False") );
+            console.log("<=  less than  or equal to result = " + (num1 <= num2 ? "True" : "False") );
+            
+            //if statment
+
+            //if (condition){
+            //  code to be execute;
+            // }
+
+            const idx = 30;
+            
+            if (idx < 10); {
+              console.log("Hello");  
+            } 
+          if (idx < 100 );{
+            console.log("Hi");
+          }
+
+          if (idx > 10){
+                console.log("correct");
+          }else{
+            console.log("Incorrect");
+          }
+          
+          if (idx > 100){
+                console.log("correct");
+          }else{
+            console.log("Incorrect");
+          }
+
+
+          if (idx == "30"){
+                console.log("correct");
+          }else{
+            console.log("Incorrect");
+          }
+
+          
+          if (idx === "30"){
+                console.log("correct");
+          }else{
+            console.log("Incorrect");
+          }
+
+          
+          if (idx != "30"){
+                console.log("correct");
+          }else{
+            console.log("Incorrect");
+          }
+
+          //!= မြန်မာလိုမှတ်ရရင် မတူဘူးမလား
+
+
+          if (idx !== "30"){ 
+                console.log("correct");
+          }else{
+            console.log("Incorrect");
+          }
+
+
+          //else if ()
+
+            // if conddition{
+            //     code to be excute;
+            // }else if (conddition);{
+            //     code  to be execute:
+            // }else it (condition){
+            //     code to be execute;
+            // }else if (condition);{
+            //     code to be execute;
+            // }esle {
+            //     code  to be excute;
+            // }
+
+            const j  =21000;
+            const k = 10000;
+
+            if (j > k){
+                console.log("Yes , J is greater thank K"); 
+            }else if ( j === k){
+                console.log("J is equal to k");
+            }else {
+                console.log("No , J is less thank k")
+            }
+          
+
+            
+                
+        
+
+
+
+
+               
+        //Nested COnditon
+
+        const passcode = "hifi23 4";
+        console.log(passcode.length) //7
+
+
+        if(passcode.length >= 5){
+                console.log("Good Passcode");
+
+            if (passcode.indexOf(" ") === -1){
+                console.log("Valid Passcode");
+            }
+            
+                else{
+                console.log("Passcode length is enought ! but should not contain space.");
+            }
+        } 
+            else{
+                console.log("passcode must be longer ");
+            }
+
+
+             
+
+
+            
+                
+ 
+
+        //Switch statement
+
+            // switch(statement){
+            //     case condition:
+            //         code  to be executed;
+            //         break;
+            //     case condition:
+            //         code to be executed;
+            //         break;
+            //      case condition:
+            //         code to be executed;
+            //         break;
+            //     case condition:
+            //          code to be executed;
+            //         break;
+
+            // }
+
+
+
+            const color = "violet";
+
+            switch(color){
+                case "red ":
+                    console.log("My fav color is not ted");
+                    break;
+
+                case "White":
+                    console.log("My fav is color is not white");
+                    break;
+
+                case "green":
+                    console.log("I hat green color" );
+                    break;
+
+                case "violet":
+                    console.log("Correct !! My fav color is violet ");
+                    break;
+                
+                default:
+                    console.log("Try Again");
+                    break;
+                }
+
+
+            //    0   1   2     3   4    5    6
+            // [sun,mon ,true ,wed thu ,fri sat]
+            
+            // let getday = new Date().getDay();
+            // console.log(getday); //2
+
+            // let today;
+            // //console.lg) (today); //undefined
+
+            // switch(getday){
+            //     case 0:
+            //         today ="Sunday";
+            //         break;
+            //     case 1:
+            //        today ="Mon";
+            //         break;
+            //     case 2:
+            //         today ="Thu";
+            //         break;
+            //     case 3:
+            //          today ="Wed";
+            //         break;   
+            //     case 4:
+            //          today ="Tue";
+            //         break; 
+
+            //      case 5:
+            //          today ="Fri";
+            //         break; 
+            //     case 6:
+            //         today ="Sat";
+            //         break; 
+                
+            //     default:
+            //         today = "Sat";
+            //         break;
+                        
+            // }
+            // console.log(today) //Saturday
+             
+
+            let p = 10;
+            let q = 50;
+
+            console.log(p); //10
+            console.log(q); //50
+
+                // p = q;
+                // console.log(p); //
+                 
+                // p = p + q;
+                // console.log(p); // 60
+
+                // p -=q;
+                // console.log(p); //-40
+
+                // p/=q ;
+                // console.log(p); 0.2
+
+                // p *= q;
+                // console.group(p); // l39statment.html:273 500
+
+
+                const username = prompt ("Enter Username");
+                const password = prompt("Enter your Passwrd");
+
+                console.log(username,password);
+                console.log(typeof username,typeof password); 
+
+
+                    if (username === "aungaung" || password === "123456"){
+                        console.log("Wecome Aung Aung");
+                    }else{
+                        console.log("Try again");
+                    }
+
+
+
+
+
+          
+
+        </script>
+        
+    </body>
+</html>
+
+<!-- Coparision Opearators -->
+
+<!-- == equal to
+=== equal to
+!= not equal
+!== not equal
+> greater than
+< less than
+>= greater than or equal to
+>= less than or equal
+? statment (ternry opeator) 
+
+Assnignment Opearators
+=
++=
+-= 
+*=
+/=
+%= -->
+
+<!-- 
+Logical Opearators
+&& and  (username correct used)
+|| or    
+! not
+
+username || password  (နှစ်ခုစလုံး မှန်မှ correct ဖြစ်မယ်)  -->
+
+<!-- 1SW -->

@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <body>
+            <h3> Form Elements</h3>
+
+            <fieldset>
+                <legend> This is sample form</legend>
+                <form accept="method" enctype="multipart/form-data">
+                    
+                </form>
+            </fieldset>
+
+
+            <!--Get
+            Post
+            Put
+            Patch
+            dtlete-->
+
+            <form  action=""  method="get" enctype="multipart/form-data">
+
+                <label for="firstname"> First Name</label>    
+                <input type="text" name="firstname" id="firstname" class=""
+                minlength="3" maxlength="5" placeholder="Enter your first name" 
+                value="Aung" readonly  autofocus required />
+
+                <br> <br/>
+
+                <label for="lastname"> Last Name</label>
+                <input type="text"name="lastname" id="lastname" class=""
+                minlength="3" maxlength="5" placeholder="Enter your lastname" autocomplete="off" value="Ma Ma" disabled/>
+
+                <br> <br/>
+                
+                <label for="age"> Age</label>
+                <input type="number" name="Age"id="age" class="" min="20"
+                max="40" placeholder="Enter  "/>
+                                                                                                                                                                                                                                                                                                          
+                <br> <br/>
+
+                <label for="password"> Passoword</label>
+                <input type="password" name="Passoword" id="password" class=""
+                placeholder="Enter your password" />
+
+                <br> <br/>
+
+                <!-- တင်ပြီးသွားရင်ကွာ DataBase ရောက်မယ်ကွာ-->
+                <!-- SQL Data type ,QL-->
+                <!-- Table Type-->
+                <!-- Data type ဆိုတာ Excle လိုပါလဲ ဒီလိုဘဲရိုးရိုးရှင်းရှင်းမှတ်ထားလိုက်အုံး-->
+                    <!-- Stand one  aritvate-->
+
+            </form>
+            <br> </br>
+        
+            <label> Gender </label>
+            <input type="radio" name="gender" id="genderm" class=""value="1" />
+             <label for="genderm"> Male</label>
+
+            <input type="radio" name="gender" id="genderf" class="" value="2"/>
+            <label for="genderf"> Female</label>
+
+            <br> </br>
+
+
+
+            <label> Choose your fav fruit</label>
+            <input type="checkbox"name="favcolor" id="favrd" class="" 
+            value="1"/> <label for="favrd">Red</label>
+
+            <input type="checkbox"name="favcolor" id="favgr" class=""
+            value="2"/> <label for="favgr">Green</label>
+
+        
+            <input type="checkbox"name="favcolor" id="favbl" class=""
+            value="3"/> <label for="favbl">blue</label>
+
+            <input type="checkbox" name="favcolor" id="favwh" class=""
+            value="4"/> <label for="favwh"> White</label>
+
+            <br> </br>
+            
+            <label> fruit</label>
+            <input type="radio" name="fruit" id="fruitap" class=""
+            value="0"/> <label for="fruitap"> Apple</label>
+            
+            <input type="radio" name="fruit" id="fruitge" class=""
+            value="1"/> <label for="fruitge"> Orange</label>
+            
+            <input type="radio" name="fruit" id="fruitba" class=""
+            value="2"/> <label for="fruitba"> Banner</label>
+            
+            <br/> <br/>
+            
+            <label for="country"> Country</label>
+            <select name="country" id="role" class="">
+                <option value="mm"> Myanmr</option>
+                <option value="th"> Thiland</option>
+                <option value="jp"> Japan</option>
+                <option value="uk">UK</option>
+
+            </select>
+    <br/> <br/>
+            <label for="role"> Role</label>
+            <select name="role" id="role" class="" multiple>
+                <option value="1"> Manger</option>
+                <option value="2"> Edit</option>
+                <option value="3"> Supermentkd</option>
+                <option value="4">Sales</option>
+
+            </select>
+            
+            <br/> <br/>
+            <label for="dob">DoB</label>
+            <input type="date" name="dob" id="dob" class=""/>
+
+            <br/> <br/>
+            
+            <label for="bookingtime">Booking Time</label>
+            <input type="time" name="bookingtime" id="bookingtime" class=""/>
+
+            
+            <br/> <br/>
+            <label for="apt">DTT</label>
+            <input type="datetime-local" name="apt" id="apt" class=""/>
+
+
+            
+            <br/> <br/>
+
+            <label for="volume"> Volume</label>
+            <input type="range" name="volume" id="volume" class="" 
+            min="0" max="100" value="0" step="10" />
+            
+            <br/> <br/>
+            <!-- မင်းကို ချေးငွေ website တစ်ခု လာအပ်မယ်ကွာ 
+             ဒါဆို ရင် dATA BAS ထဲ မှ အများကြီး ထည့်ရမယ်-->
+             
+            <label for="vdo"> NRC </label>
+            <input type="file" name="nre" id="vdo" class="" accept="
+            image/*" capture="user" multiple/>
+            
+            <br/> <br/>
+
+            <label for="nrc"> Video </label>
+            <input type="file" name="vdo" id="vdo" class="" accept="
+            video/*" capture="enviroment" multiple/>
+
+            
+            <br/> <br/>
+            <label for="email"> Email </label>
+            <input type="email" name="email" id="email" class=""
+            placeholder="Enter your email"/>
+         
+        </br>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" class="" rows="10" spellcheck="true"
+             placeholder="Enter your Bio"></textarea>
+
+            </br>
+
+             <input type="time" name="test" id="test" class="" hidden/>
+             <input type="hidden" name="lat" id="lat" class="" />
+
+            <br/> <br/>
+
+            <input type="reset" name= "cancels" id="cancels " class="" value="Wai"/> 
+
+            <input type="button" name="Login" id="Login " class="" value="Login"/>
+
+            <input type="submit" name="signups" id="signups" class="" value="Signup"/>
+
+            <button type="reset" name="regester" id="Cancel" class="" > Cancel</button>
+            <button type="button" name="regester" id="regester" class="">Register</button>
+            <button type="submit" name="Signup" id="Signup" class="" > Signup</button>
+
+  <!-- ဖောင်ထဲမျာ  မဖြစ်မနေထည့်ချင်ရင် required ပေးပါ -->
+    <!-- Tag -->
+    <!-- Self Clising Tag -->
+<hr/>
+  <!-- Elements -->
+   <!-- Attribute -->
+ <!-- Stand Alone  Attrivutes -->
+
+    <!-- slect -->
+    <!-- disable -->
+     <!-- required -->
+   <!-- readonly -->
+  <!-- checked -->
+ <!-- multiple -->
+<!-- hidden -->
+  <!-- autofocus -->
+
+
+  23
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+     
+
+
+
+     </form>
+        </body>
+
+        
+    </head>
+</html>

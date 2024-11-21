@@ -1,0 +1,41 @@
+/* Pseudo Element */
+/* .paragraph{
+    color: red;
+    font-size: 20px;
+    user-select: none;
+} */
+/* 
+.paragraph::first-letter{
+    color: blue;
+    font-size: 20px;
+    user-select: none;
+
+} */
+
+
+/* .paragraph::first-line{
+    color: blue;
+    font-size: 20px;
+} */
+
+/* .paragraph::selection{
+    background-color: rgb(68, 59, 8);
+    color: wheat;
+
+} */
+
+/* befor ,afet သုံးချင်ရင် content ပါကိုပါရပါမယ် */
+
+
+.paragraph::before{
+    content: 'ABC';
+    font-size: 30px;
+    color: blue;
+}
+
+
+.paragraph::after{
+    content: 'EFG';
+    font-size: 30px;
+    color: rgb(27, 189, 135);
+}

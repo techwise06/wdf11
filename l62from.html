@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Honrizontal Aligiment </title>
+
+        <!-- bootstrap css1 js1 -->
+    
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+       <!-- Flatpicker  1  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        
+        <!-- select to lb 1 -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+        <!-- summernote1  css and js  -->
+
+        <!-- ချိတ်ရန် -->
+
+
+        <style  type="text/css">
+
+        
+
+
+            body{
+               background-color: rgb(192, 183, 159);
+            }
+            label{
+                color: #f4f4f4;
+                font-family: sans-serif;
+                font-weight: 400;
+                font-style: inherit;
+            }
+
+        
+
+        </style>
+    </head> 
+    <body>
+        <div class="container"> 
+        <form action="" method="" enctype=" multipart/form-data">
+    
+            <div class="row"> 
+                <div class="col-md-6 form-group mb-3">
+                    <label for="fistname"> First Name</label>
+                    <input type="text" name="fistname" id="fistname" class="form-control" class="form-control-sm rounded-0" placeholder="Enter you fistname">
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="fistname"> Last Name</label>
+                    <input type="text" name="fistname" id="fistname" class="form-control" class="form-control-sm rounded-0" placeholder="Enter you fistname">
+                </div>
+
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="height"> Height Name</label>
+                    <input type="text" name="height" id="height" class="form-control" class="form-control-sm rounded-0" placeholder="Enter you fistname">
+                </div>
+
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="fistname">Email </label>
+                    <input type="email" name="email" id="email" class="form-control" class="form-control-sm rounded-0" placeholder="Enter you Email ">
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label for="password ">  Password </label>
+                    <input type="text" name="password" id="password" class="form-control" class="form-control-sm rounded-0" placeholder ="Enter you password  " >
+                </div>
+
+                <div class="col-md-6 form-group mb-3" >
+                    <label for="country"> Country</label>
+                    <select name="country" id="country" class="form-select rounded-0">
+                        <option class="  selected disabled">  Chooose you country </option>
+                        <option value="mm"> Myanmar</option>    
+                        <option value="th"> Thinadal</option>    
+                        <option value="slk"> Srilanda</option>    
+                        <option value="indo"> Inodesia</option>    
+                        <option value="yan"> Yangon</option>    
+                        <option value="man"> Mandaly</option>    
+                    </select>
+
+
+                </div>
+
+
+                <div class="col-md-6 form-group mb-3" >
+                    <label for="role"> Country</label>
+                    <select name="role[]" id="role" class="form-select rounded-0 " multiple >
+                        <option value="mm"> Myanmar</option>    
+                        <option value="th"> Thinadal</option>    
+                        <option value="slk"> Srilanda</option>    
+                        <option value="indo"> Inodesia</option>    
+                        <option value="yan"> Yangon</option>    
+                        <option value="man"> Mandaly</option>    
+                        <option value="mm"> Myanmar</option>    
+                        <option value="th"> Thinadal</option>    
+                        <option value="slk"> Srilanda</option>    
+                        <option value="indo"> Inodesia</option>    
+                        <option value="yan"> Yangon</option>    
+                        <option value="man"> Mandaly</option>    
+                        <option value="mm"> Myanmar</option>    
+                        <option value="th"> Thinadal</option>    
+                        <option value="slk"> Srilanda</option>    
+                        <option value="indo"> Inodesia</option>    
+                        <option value="yan"> Yangon</option>    
+                        <option value="man"> Mandaly</option>    
+                        <option value="mm"> Myanmar</option>    
+                        <option value="th"> Thinadal</option>    
+                        <option value="slk"> Srilanda</option>    
+                        <option value="indo"> Inodesia</option>    
+                        <option value="yan"> Yangon</option>    
+                        <option value="man"> Mandaly</option>    
+                        <option value="mm"> Myanmar</option>    
+                        <option value="th"> Thinadal</option>    
+                        <option value="slk"> Srilanda</option>    
+                        <option value="indo"> Inodesia</option>    
+                        <option value="yan"> Yangon</option>    
+                        <option value="man"> Mandaly</option>    
+                    </select>
+
+
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                    <label> Gender </label>
+
+
+                    <div>
+                        <input type="radio" name="gender" id="genderm"  class="form-check-input" value="1" /> <label for="gendrm"> Male </label>
+                    </div>
+
+
+                    <div>
+                        <input type="radio" name="gender" id="genderm"  class="form-check-input" value="1" /> <label for="gendrm"> Female</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6 form-group mb-3"> 
+                    <label for="check-box"></label>    
+                </div>
+
+                <div class="form-check"> 
+                    <input type="checkbox" name="favmusic" id="favk" class="form-check-input" value="1" /> <label for="favk"> Rock</label>
+                </div>
+
+                <div class="form-check"> 
+                    <input type="checkbox" name="favmusic" id="favhip" class="form-check-input" value="1" /> <label for="favhip"> Hip-Hop </label>
+                </div>
+
+                <div class="form-check"> 
+                    <input type="checkbox" name="favmusic" id="favp" class="form-check-input" value="1" /> <label for="favp"> Pop  </label>
+                </div>
+
+                <div class="form-check"> 
+                    <input type="checkbox" name="favmusic" id="favd" class="form-check-input" value="1" /> <label for="favd"> Dram  </label>
+                </div>
+
+
+                <div class="col-md-6 form-group mb-3">
+                    <input type="file" name="nre"  id="nrc" class="form-control rounded-1 bg-primary" />
+                    <label for="nrc"> NRC</label>
+                   
+                </div>
+
+                
+                <div class="col-md-6 form-group mb-3">
+                    <label for="score"> Score </label>
+                    <input type="range" name="score" id="score" class="form-control rounded-0" />
+
+                </div>
+
+
+                <div class="col-md-6 form-group mb-3">
+                    <div class="form-check form-switch" >
+                        <input type="checkbox" name="agree" id="agree" class="form-check-input" value="1"/> <label for="agree">  I agree all the above regualtion</label>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <div class="d-flex justify-content-end">
+                    </div>    
+                    <button type="reset" class="btn btn-danger btn-sm rounded-2 me-3"> Cancel </button>
+                    <button type="submit" class="btn btn-primary btn-sm rounded-2 me-3"> Regsister </button>
+                </div>
+            </div>
+
+        
+         
+        </form>
+    </div>
+
+        <!-- bootstrap css2 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- bootstrap css1 js1 -->
+        <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+
+
+        <!-- Flatpicker  2  -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <!-- select to lb 2 -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        
+
+        <!-- summernote1  css and js  -->
+
+
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                $('#role').select2({
+                    placeholder: 'Choose you country ',
+                    allowClear: true
+                    });
+            });
+
+            // for bio 
+            // $('#bio').summernote();
+        </script>
+
+
+    </body>
+</html>
+
+<!-- jQuery ပြီးမှာ j select ချိတ်ပါရပါမည်  https://select2.org/getting-started/installation-->
+ <!-- Time libary  jQuery https://flatpickr.js.org/ -->
+  
+ <!-- https://datatables.net/ -->
+
+<!--  
+unit 0 to 5 
+
+Margin = m-5
+maring-top = mt-5 
+maring-bottom = mb-5 
+maigin-left = ms-5
+magin-right = me-5
+                mx-5
+                my-5 
+                mx-auto 
+                my-auto 
+
+
+
+
+
+padding = p-5
+padding-top = pt-5 
+padding-bottom = pb-5 
+padding-left = ps-5
+padding-right = pe-5
+                px-5
+                py-5 
+               -->
+
+
+                <!-- 7fe -->

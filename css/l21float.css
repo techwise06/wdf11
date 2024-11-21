@@ -1,0 +1,62 @@
+/*
+
+Variable
+
+    (i) System Variable (default)
+    (ii) Custom Variable    (Custom Property)
+
+    namiing(--) 
+        --(1color) ပေးလို့မရပါ
+        --$#@ ပေးလို့မရပါ
+    
+    */
+
+    /* float မှာ left , :right ရိပါတယ် */
+
+
+:root{
+    --color1:red;
+    --ol:rgb(0, 255, 157);
+    --olul:rgb(47, 27, 233);
+    --ch:green;
+    --gdc:linear-gradient(red,blue);
+
+}
+
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color1);
+
+    float: left;
+}
+
+
+.div2{
+    width: 200px;
+    height:200px;
+    background-image: var(--gdc);
+    float: left;
+
+}
+
+.div3{
+    width: 300px;
+    height: 300px;
+    background-color:var(--olul);
+    float: left;
+}
+
+.div4{
+    width: 400px;
+    height:400px;
+    background:var(--gdc);
+    float: left;
+}
+
+.div5{
+    width: 500px;
+    height: 500px;
+    background-color: var(--ch);
+    float: left;
+}

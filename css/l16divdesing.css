@@ -1,0 +1,90 @@
+.firstdiv{
+    width: 500px;
+    height: 500px;
+
+    /* background-color: yellow; */
+    /* background-color: hsl(169, 7%, 54%); */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                /* h  v   b   c */
+    /* text-shadow: 0px 5px 3px rgb(255, 33, 33); */
+    text-shadow: 00px 5px 3px red
+}
+
+
+.seconddiv{
+    width: 1000px;
+    height: 1000px;
+
+    background-image: url(./../img/cover/face\ book.png);
+    /* background-repeat:no-repeat; */
+    /* background-repeat: repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+
+    /* background-position: center; */
+
+    color: red;
+    font-size: 20px;
+    border: 2px solid red;
+
+
+
+    /* background -color   solid color
+        background         solid  color     gradientcolor       image 
+        background -image                   gradientcolor     image*/
+        
+
+}
+
+.thiddiv{
+    width: 300px;
+    height: 300px;
+
+    /*  can slid color */
+    /* backgorund-color: green */
+
+
+     /* cam solid color ,gradient image */
+
+    /* background: linear-gradient(red,blue); */
+    /* background: linear-gradient(#c03131,#bdbd22); */
+    /* background: linear-gradient(hsl(120, 56%, 37%),hsl(240, 57%, 56%)); */
+    /* background: linear-gradient(rgb(61, 172, 61),rgb(84, 84, 187)); */
+
+    /* can background-image */
+    /* background-image: linear-gradient(red,green); */
+
+    background: linear-gradient(
+                    110deg,
+                    red,
+                    blue,
+                    yellow,
+                    green,
+                    black
+                );
+    color: #c0671e;
+
+    /* b s c */
+    border: 3px solid black;
+}
+
+.fourdiv{
+
+    width: 300px; 
+    height: 300px;
+
+    background-image: url(./../img/cover/face\ book.png);
+    background: linear-gradient(blue,red),url("./../img/cover/face\ book.png");
+    /* background-image: linear-gradient(
+                                45deg,
+                                rgb(29, 233, 29),
+                                rgb(255, 255, 255),
+                                rgb(17, 138, 244)) url("./../img/fav/download.png"
+                                
+                                ); */
+    /* background-color: #a45718; */
+     /* background: no-repeat;  */
+     /* background-position: center; */
+
+    border: 3px solid blue;
+} 

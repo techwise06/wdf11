@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sting  Method </title>
+        <style> 
+            body{
+                 background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let firstname = "Mya Hnin";
+            let lastname  = "Yee Lwin";
+
+            console.log(firstname); // Mya Hnin
+            console.log(lastname); //  Yee Lwin
+            console.log(firstname,lastname); // Mya Hnin Yee Lwin
+            console.log(firstname.length); //8
+        
+
+            //Concat (+)
+
+            let fullname = firstname+ " " +lastname;
+            console.log(fullname); //Mya Hnin Yee Lwin
+
+            //=> (Conact String )
+
+            console.log(firstname.concat( lastname));  //Mya Hnin Yee Lwin
+            console.log(lastname.concat(firstname)); // Yee LwinMya Hnin
+
+            //Append (+=)
+
+            let name1 = "Honey Nway";
+            let name2 = "Oo";
+
+            console.log(name1+name2); //Honey NwayOo
+            console.log(name1.concat(name2)); // Honey NwayOo  
+
+            name1 +=name2;
+            console.log(name1); // Honey NwayOo  
+
+            let num1 = 10;
+            let num2 = 20;
+
+            // num1 = num1;
+            // console.log(num1); //10
+
+            // num1 = num1+num2;
+            // console.log(num1); //30
+
+            num1 += num2;
+            console.log(num1); // 30
+
+
+            // Stirng is Charcter Array in Js
+
+            let myfriend = "Aung Ko Ko";
+
+            console.log(myfriend);  //Aung Ko Ko
+            console.log(typeof myfriend); //string
+            console.log(myfriend.length) // 10 
+
+            console.log(myfriend[0]); // A
+            console.log(myfriend[3]); // g
+            console.log(myfriend[4]); //  
+            console.log(typeof myfriend[3]) //string 
+            console.log(myfriend[myfriend.length-1]) //0
+
+            // Repeat (count) 
+
+            const greeting = "I love you";
+            console.log(greeting.repeat(100));
+
+            // document.write(greeting);
+
+            //charAt (index)
+            const nickname = "Aung Kyaw Kyaw";
+            console.log(nickname[5]); //K
+            console.log(nickname.charAt(5)); // K
+            console.log(nickname.charAt(nickname.length-1)); //
+
+            //includes (String)
+            let favcolor = "My fav color is black color";
+            console.log(favcolor.includes("black")) // true
+            console.log(favcolor.includes("red")); // false
+            console.log(favcolor.includes("Black")); // false
+            console.log(favcolor.includes("BLACK")); // false
+            console.log(favcolor.includes("bla")); // false
+
+            //repelace.(lod,new)
+
+            console.log(favcolor.replace("black" , "red")); // My fav color is red color
+            console.log(favcolor.replace("Black" , "red")); // My fav color is black color
+            console.log(favcolor.replace("BLACK" , "red")); // My fav color is blsce color
+            console.log(favcolor.replace("bla" , "red")); // My fav color is redck color
+            console.log(favcolor.replace("color" , "colour")) //   My fav colorus is black color
+
+
+            
+            // startsWith (string)
+            const sayhi = "Dear U Ba";
+            console.log(sayhi.startsWith("Dear")); //ture
+            console.log(sayhi.startsWith("dear)")); //false
+            console.log(sayhi.startsWith("D)")); //false
+            console.log(sayhi.startsWith("d)")); //false
+
+
+            console.log(sayhi.startsWith("Dear" , 0)); //true
+            console.log(sayhi.startsWith("ar" , 2)); //true
+            console.log(sayhi.startsWith("U" , 5)); //true
+
+
+            //endsWith (string)
+            //endsWith(string,index)
+
+            const  saybye = "See you later";
+            console.log(saybye.endsWith("later")); //true
+            console.log(saybye.endsWith("r")); //  true
+            console.log(saybye.endsWith("e")) //flase
+            console.log(saybye.endsWith("r" , saybye.length-4)); 
+
+            
+            // const yousay= "Hello aung aung";
+            // if (yousay,startsWith("hello")){
+            //     var isay = "hi Kyaw Kyaw";
+            // }
+            // // console.log`yousay ${yousay},I say $ {isay}`;
+
+
+            //substing (index,lenght)
+
+            // text I need get 
+            console.log(favcolor.substring(0,10)+"....."); // My fav col.....
+            console.log(favcolor.substring(0,10).concat('........')) // My fav col ......
+
+
+
+
+
+
+            //chang Cse
+            //  .toplowerCase
+            //  .topuppercase
+
+            console.log(favcolor.toLocaleLowerCase()); // my fav color is black color
+            console.log(favcolor.toUpperCase()); // MY FAV COLOR IS BLACK COLOR
+
+            
+
+
+
+
+        </script>
+    </body>
+</html>

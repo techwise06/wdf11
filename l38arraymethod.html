@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Array Method</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3> Show Name = <span id="replacename"> </span></h3>    
+
+        <form action="" method="">
+
+            <div class="form-group"> 
+                <label for="firstname"> FirstName</label>
+
+                <input type=" text" name="firstname" id="firstname" class="form-control" placeholder="Enter your crush name" autofocus >
+            </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        let arrcolors = ["red", "blue", "green", "white", "black", "steel"];
+        console.log(arrcolors);
+        console.log(arrcolors.length); // 6
+        console.log(arrcolors[3]); //white
+
+        // indexOf (vale)
+        console.log(arrcolors.indexOf('green')); // 4
+        console.log(arrcolors.indexOf('Blace')); //-1
+        console.log(arrcolors.indexOf('blue')); // 1
+
+
+
+
+
+        // Array.is Array( array)
+        const name = "aung ";
+        console.log(Array.isArray(name)); // false
+        console.log(Array.isArray(arrcolors)); // true
+
+        // console.log(Array.isArrayname); 
+
+
+        //join ('delimitor')
+
+        console.log(String(arrcolors));
+        console.log(arrcolors.toString());
+        console.log(arrcolors.join()); //
+        console.log(arrcolors.join("")); //
+        console.log(arrcolors.join(" ")) // red blue green white black steel
+        console.log(arrcolors.join("_"));// red_blue_green_white_black_steel
+
+        // ဆိုလိုတကာ() ထဲမှဦ ထည့်ချင်တာပြပြီး နောက်ကဟာ chose
+        // "" ဘာမှမထားချင်ရင်  space တစ်ချက်
+        // " "
+        // "_,$"
+
+        // console.log(arrcolors.join("_"));
+        const candies = ["red", "blue", "green", "black", "white"];
+        candies[5] = "pink";
+        candies[1] = "sky blue";
+
+        console.log(candies);
+        // console.log(candies[1]);
+        console.log(candies.length) // 6
+
+
+        //push (value); Note :: Add new value to array (addon  to end )
+
+        candies.push("orange");
+        candies.push("gold");
+        candies.push("vilolet", "gray");
+
+
+        console.log(candies); //(10) ['red', 'sky blue', 'green', 'black', 'white', 'pink', 'orange', 'gold', 'vilolet', 'gray']
+
+        console.log(candies.length) // 10
+
+
+        //unshift (value)
+
+        // shift  Note : : Revmove value & index (take of from front)
+
+        candies.unshift("tomato");
+        candies.unshift("green");
+        candies.unshift("silver", "steelblue");
+
+        console.log(candies); //  ['silver', 'steelblue', 'green', 'tomato', 'red', 'sky blue', 'green', 'black', 'white', 'pink', 'orange', 'gold', 'vilolet', 'gray']
+
+
+        //pop () Note : : Temove value &index (take from end)
+
+        candies.pop("tomato");
+        candies.pop("green");
+        candies.pop("silver");
+
+        console.log(candies);
+
+
+        //delete (Remove only value)
+
+        delete candies[1];
+
+
+        //Spliec (index ,lnegth);
+
+        // index number ဘယ်လောက်ကနေ ဘယ်လောက်ကနေ
+
+
+
+
+        // concat()
+
+        const arr1 = ["aung ", "maung maung", "tun tun", "kyaw kyaw"];
+        const arr2 = ["su su", "nu num", "la la", " su su"];
+        const arr3 = ["10,20"];
+
+        console.log(arr1 + arr2); // aung ,maung maung,tun tun,kyaw kyawsu su,nu num,la la, su su
+
+        console.log(arr1.concat(arr2));   //(8) ['aung ', 'maung maung', 'tun tun', 'kyaw kyaw', 'su su', 'nu num', 'la la', ' su su']
+
+        console.log(arr3.concat(arr2)); //   ['10,20', 'su su', 'nu num', 'la la', ' su su']
+
+        //sort() a to z 
+
+        const combinearss = arr1.concat(arr2);
+
+        console.log(combinearss);  //
+        console.log(combinearss[0]); // aung aung
+        console.log(combinearss[4]); // su su
+
+
+        //reveerse () Note :: reverse can't set z to a ,it's just reverse 
+        console.log(combinearss.reverse()); //
+
+        const arrnmbers  = [200,500,550,666,460,8000,886,466,546,55,686,589828,99427002,8942];
+        console.log(arrnmbers); // (14) [200, 500, 550, 666, 460, 8000, 886, 466, 546, 55, 686, 589828, 99427002, 8942]
+
+        console.log(arrnmbers.sort()); // (14) [200, 460, 466, 500, 546, 55, 550, 589828, 666, 686, 8000, 886, 8942, 99427002]
+        console.log(arrnmbers.reverse()); //  [99427002, 8942, 886, 8000, 686, 666, 589828, 550, 55, 546, 500, 466, 460, 200]
+
+        // reverse :: Note ရှေ့နောက် ပြောင်းပြန်လှန်ထည့်လိုက်သည်....
+
+
+        // callback function
+
+console.log(arrnmbers.sort(function(a,b){
+        return a-b //
+       }));
+
+console.log(arrnmbers.sort(function(x,y){
+    return y-x ;
+}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //unshift (vale)
+        // condies.unshift ("tomato");
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+:root{
+    --wcc:#0c34b6;
+    --gyc:#777;
+    --dbc:darkblue;
+    --occ:orange;
+    --gnc:green;
+    --gny:green;
+    
+
+}
+*{
+    box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body{
+    /* viewport height (vh) */
+    /* (wh) */
+    height: 100vh;
+    display: flex;
+    /* display:  flex;ပါ မှ သာလျှင့် အောက်က နှစ်ခု အလုပ်လုပ်ပါသည်။။။။။ */
+    justify-content: center;
+    align-items: center;
+    /* background-color: silver; */
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+.container{
+    width: 500px;
+    background-color: var(--gyc);
+       /* h v b c*/
+       box-shadow: 0 2px 15px rgba(5, 1, 15, 0.3) ;
+        background: transparent;
+      
+
+}
+.container h2{
+    text-align: center;
+
+}
+.container .form{
+        /* top&button left&right */
+    padding: 30px 40px;
+
+}
+ .form-group{
+    margin-bottom: 30px;
+
+}
+.form-group label{
+    display: block;
+    color: var(--gyc);
+    margin-bottom: 5px;
+}
+.form-group .form-control{
+    width: 100%;
+    padding: 10px;
+}
+
+
+.form-group .form-control::placeholder{
+    color: blueviolet;
+}
+.form .btn{
+    width: 100%;
+    background-color: var(--dbc);
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    padding: 10px;
+    transition: background-color .4s;
+
+
+
+}.form .btn:hover{
+    background-color: var(--occ);
+}
+.form .btn:active{
+    background-color: var(--gnc);
+}

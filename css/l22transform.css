@@ -1,0 +1,135 @@
+:root{
+    --gn:rgb(206, 189, 37);
+    --oc:orange;
+    --rc:red;
+    --br:blue;
+}
+
+.div1{
+    --wh:100px;
+    width: 100px;
+    height: 80px;
+    background-color: var(--gn);
+
+            /* rotate: xy; */
+            transform: rotate(90deg);
+}
+
+
+.div2{
+    --wh:100px;
+    width: 100px;
+    height: 80px;
+    background-color: var(--oc);
+}
+
+
+/* transform: roate(360deg)
+transform:
+transform: roate(-45deg) */
+
+
+.div3{
+    width: 200px;
+    height: 100px;
+    background-color: var(--rc);
+                /* rotateX: (x) ; */
+
+                transform: rotate(-30deg);
+}
+
+.div4{
+    width: 100px;
+    height: 200px;
+    background-color:var(--br);
+        /* roatY(y) */
+        transform: rotate(45deg);
+}
+
+
+.div5{
+    width: 100px;
+    height: 150px;
+    background-color:var(--gn);
+
+            scale: (xy);
+            /* default=1 */
+        /* transform: scale: (0); */
+        /* transform:scale(1.5); */
+        /* transform:scale (0.5); */
+}
+
+.div6{
+    width: 100px;
+    height: 150px;
+    background-color:var(--gn);
+    /* transform: skew(20deg); */
+    transform: skew(-20deg);
+}
+
+
+.div7{
+    width: 100px;
+    height: 100px;
+    background-color:var(--rc);
+        /* translate: (x); */
+    /* transform: translate(100px); */
+    /* transform: translate(50%); */
+
+    /* transform: translate(-100px); */
+    /* transform: translate(-50%); */
+
+
+    /* transform: translate Y (100px); */
+    /* transform: translateY (-100px); */
+    /* transform: translate Y(-50%); */
+  
+}
+
+
+.div8{
+    width: 100px;
+    height: 100px;
+    background-color:var(--gn);
+        /* translate: x,y; */
+    /* transform: translate(50%); */
+    /* transform: translate(50%,50%); */
+    /* transform: translate(-50%,50%); */
+    /* transform:  translate((50%,-50%)); */
+
+        /* transform: translateX(-50%); transform: translateY(-50%); */
+}
+
+h1{
+    text-align:center;
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.text{
+    text-align: justify;
+    color: steelblue;
+    font-size: xx-large;
+
+}
+
+@media(max-width:600px){
+
+    h1{
+        color: steelblue;
+        font-size: 15px;
+    }
+    p.text{
+        color: green;
+        
+    }
+
+}
+    
+
+
+
+
+
+
+

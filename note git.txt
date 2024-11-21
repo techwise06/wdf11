@@ -1,0 +1,14 @@
+git init
+
+git remote add origin git ..............
+git status
+red color ထည့်သွင်းဖို့အတွက် git -A 
+git -A 
+
+commit ပေးလို့ရပါပီ
+git commit -m "    you write       "
+
+git status check 
+
+git sever input  ==>
+git push -u origin master 

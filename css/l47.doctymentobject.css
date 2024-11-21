@@ -1,0 +1,105 @@
+*{
+    box-sizing:  border-boxs;
+}
+
+
+body{
+    height:100vh;
+    background-color: aliceblue;
+
+
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+  
+    }
+
+    .container{
+        width: 400px;
+        background-color: #fff;
+        box-shadow:  0 2px 10px  rgba( 0,0,0,0.3);
+    }
+
+    .container .card{
+        padding:  30px ,40px;
+    }
+    .card h3 ,.card h4{
+        /* background-color: blue; */
+        text-align: center;
+        letter-spacing: 2px;
+
+
+    }
+    .form-group{
+        margin-bottom:  20px;
+    }
+    .form-group label{
+        display: block;
+        color: #fff;
+        margin-bottom:  5px;
+    }
+    .form-group .form-control{
+        width: 100%;
+        padding: 10px;
+        border: none ;
+        border-bottom:  1px solid #0999;
+    }
+
+    .form-group .form-control:focus{
+        outline: none;
+        border-bottom: 1px solid blue;
+    }
+    .form .btn{
+        width: 100%;
+        background-color: steelblue;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        border-radius: 8px;
+        padding:  10px ;
+        cursor: pointer;
+    }
+
+    .card .card-footer{
+        border-top:  1px dashed #0999;
+        border-bottom:  1px dashed #fff;
+        margin:  20px  0;
+    }
+
+    .card-footer .list-group{
+        list-style:  none;
+        padding:  0;
+        margin:  0;
+    }
+    .list-group .list-group .item{
+     line-height:  30px;
+
+        display: flex;
+        justify-content:  center;
+
+    }
+
+    .delete-item{
+        color:  red;
+      
+
+    }
+    .clear-task{
+        background-color:  #e22d2d;
+        color:  #fff;
+        text-decoration: none;
+        padding:   3px 5px ;
+        
+
+    }
+
+     .card .moretasks{
+        text-align: center;
+        margin-top:  3px;
+        
+     }
+.moretasks .loading{
+    width: 20px ;
+        border-bottom:  1px dashed #fff;
+
+}

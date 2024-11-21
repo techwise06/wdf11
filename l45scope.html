@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+       <script>
+        // Global Scope 
+        const  name =  "aung aung";
+        // const name = "su su ";
+        console.log(name);
+
+
+        let city = "Mandlay";
+            // city = "Yangon";
+        // let city = "Bago";
+        console.log(city)
+
+        var country = "Myanmr ";
+             country = "THialld";
+        var country = "Singpon";
+
+        console.log(country);
+
+
+        // ----------------------------
+
+        // Block Scope 
+
+        //Loop
+        // for (const = x =0 ; < 10 ; x++){
+        //     console.log(x) //error
+        // }
+
+
+        for (let b = 0 ; b < 10 ; b++){
+                console.log(b) // 0 to 9 
+        }
+
+        // console.log("b outsie value = ", b); // l45scope.html:42 Uncaught ReferenceError: b is not defined
+
+        for (var d = 0 ; d< 10 ; d++){
+            console.log(d); ///
+        }
+
+        console.log("d outside value = = " ,d); //
+
+        const num1 = 0;
+        let num2 =0;
+        var num3 =0;
+
+        // for (num1;num1 < 10; num1++){
+        //     console.log(num1);// 0 error
+        // }
+
+        for (num2;num2 < 10;num2++){
+            console.log(num2); //
+        }
+
+        console.log(" num2 outside value = " ,num2); // num2 outside value =  10
+
+
+        for(num3;num3 <  10;num3++){
+            console.log(num3); // 0 to 9
+        }
+        console.log(" num3 outsie value is = ", num3); // 
+
+
+        // New Declare/ 
+
+        const num4 = 1;
+        let num5 = 2;
+        var num6 = 3;
+
+
+
+        // for(const num4=0;num4 < 10;num4++);{
+        //     console.log(num4); // 0 error
+        // }
+
+        for(let num5=0;num5 < 10;num5++){
+            console.log(num5) //
+        }
+        console.log("num5 outisde valuei = " ,num5) // num5 outisde valuei =  2
+
+
+     
+        for(var num6=0;num6 < 10;num6++){
+            console.log(num6) //
+        }
+        console.log("num6 outisde valuei = " ,num6) //num6 outisde valuei =  10
+
+
+        // ----------------
+
+
+        //Object
+
+        const customer = {
+            fullname: "Zaw Zaw",
+            age: 34,
+            phone: " 0916455473"
+        };
+        console.log(customer)
+        console.log(customer.fullname)// Zaw Zaw
+        console.log(customer.age)// 34
+        console.log(customer.phone)//  0916455473
+
+
+        customer.city = " Mandaly";
+        console.log(city); //Mandaly
+
+        customer.fullname  = "Ko Aung Htet Myat Soe";
+        console.log(customer) //    {fullname: 'Ko Aung Htet Myat Soe', age: 34, phone: ' 0916455473', city: ' Mandaly'}
+
+
+        //ERROR
+        // const  customer ={
+        //     citizen: "Maynamr"
+        // }
+        // console.log(customer);
+
+
+        let members = {
+            fullname:"May ",
+            age: 16,
+            phone: "0464546"
+        }
+
+        console.log(members); //
+        console.log(members.fullname,members.age,members.phone)//  May  16 0464546
+
+        members.city = "Yangon";
+        console.log(members); //
+
+
+        members.age = 25;
+        console.log(members); //
+
+        members = {
+            citizen: "Myanmr"
+        }
+        console.log(members) //
+        console.log(members.fullname,members.age,members.phone) //  undefined undefined undefined
+
+        var students = {
+            fullname:"aung aung",
+            age:16,
+            phone:" 094456464"        };
+
+            console.log(students);
+
+
+            students.city = "Magway";
+        console.log(students); //
+
+
+        students.age = 35;
+        console.log(students); //
+
+        students = {
+            citizen: "Thailnand"
+        };
+        console.log (students);
+
+
+        // Array
+
+        const  arrclors = ["red", "gren" ,"blue"];
+        console.log(arrclors);
+
+        arrclors[0] = "violiet";
+        console.log(arrclors);
+
+        arrclors[2] = "steeblue";
+        console.log(arrclors);
+
+
+        arrclors[3] = "yellow";
+        console.log(arrclors);
+
+        arrclors.push("gold");
+        console.log(arrclors);
+
+        // arrclors = ["black","white", "yellowblue"];
+        // console.log(arrclors);
+
+        var arrboys = ["Aunag Aung", "Moe Win ", "Nan Thu", "Soe Moe"," Pyae Sone"];
+        console.log(arrboys); // aye', 'may may', 'Nan Nan', 'Soe Soe', ' Su Pyae']
+
+
+        arrboys[0] = "Aye Kyaw San";
+        console.log(arrboys);
+
+        arrboys[2] = "Aung Min Tun";
+        console.log(arrboys);
+
+
+        arrboys[3] = "Niy Nyi Thu Ta";
+        console.log(arrboys);
+
+        arrboys.push("Khin Soe Win");
+        console.log(arrboys);
+
+        //funstion Socpe
+
+        const number1 = 10;
+        let number2 = 20;
+        var number3 =  30;
+
+
+        function funone(){
+            console.log(number1+number2+number3);
+        }
+        funone(); // 
+
+
+        function funtwo(){
+            const x = 100;
+            let y = 200;
+            var z = 300;
+            console.log(x+y+z) //
+        }
+
+        funtwo(); //600
+
+        console.log("Global Scope Variable number1 = ",number1); //10
+        console.log("Global Scope Variable number1 = ",number2); //20
+        console.log("Global Scope Variable number1 = ",number3); //30
+
+        // console.log("Global Scope Variable x = ",x); //10
+        // console.log("Global Scope Variable y = ",y); //20
+        // console.log("Global Scope Variable z = ",z); //30
+
+        
+        // Override 
+
+        const p = 1;
+        let q =  2;
+        var r = 3;
+
+        function funthree(){
+            //p = 10; //error
+            q = 20;
+            r = 30;
+
+            // console.log("From Funcion ,p vale  is by const  = ",p ); //
+            console.log("From Funcion ,q vale  is by const  = ", q ); //
+            console.log("From Funcion ,r vale  is by const  = ", r ); //
+            console.log("From Funcion ,r vale  is by const  = ", r ); //
+        }
+
+        funthree();
+    
+        
+
+        
+
+
+       </script> 
+    </body>
+</html>

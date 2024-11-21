@@ -1,0 +1,141 @@
+.borderstyle1{
+    border-style: solid;
+    border-color: #11d07a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-style: double; */
+}
+
+
+.borderstyle2{
+    border-style: double;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: rgb(77, 22, 230);
+}
+
+.borderstyle3{
+    border-style: dotted;
+    border-color: #c90f0f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.borderstyle4{
+    border-style: dashed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.borderstyle5{
+    border-style: inset;
+    border-color: #787bd5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.borderstyle6{
+    border-style:outset;
+    border-color: #498123;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.borderdesig{
+    width: 300px;
+    height: 300px;
+
+    background:yellow;
+    /* background-color: red; */
+    /* background:rgb(127, 22, 10); */
+   
+
+    /* border-style */
+    /* border-radius:50%; */
+    /* border-radius: 70px; */
+
+    /*              lt/rb rt/ lb */
+     /* border-radius: 10px 10px; */
+
+     /*                 lt  rt rb  lb  */
+        border-radius: 50px 5100px 200px;
+     
+     
+     /* border-style:solid; */
+     /* b s c */
+     /* border style  color */
+
+     border: 3px dashed #0d0de0;
+     /* border: 3px  inset #4936b3; */
+
+    }
+
+ul{
+    /* list-style-type: none; */
+    /* list-style: none; */
+    /* list-style-type:decimal-leading-zero; */
+
+    width: 30%;
+    height: 60px;
+    border: 3px solid rgb(128, 0, 0);
+}
+
+
+
+li{
+    /* list-style:none; */
+    /* list-style-type:decimal; */
+
+
+    /*        b s c */
+     border: 1px solid hwb(134 1% 0%);
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+     /* border: 1px;
+     border-style: double;
+     border-color: green; */
+
+
+}
+
+
+/* 
+Attribute  */
+input[ type="text"]{
+    width: 300px;
+    background-color: #1137d0;
+    color: rgb(157, 170, 155);
+    border-radius: 10px;
+}
+
+
+input[type="password"], input[type="email"]{
+
+    background-color: #0eff3a;
+    border-radius: 80px;
+}
+    
+body{
+    /*  unifom Resoure Lcoator */
+    background-image: url(./../img/png/images.jfif);
+    /* background-repeat: repeat; */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+
+
+     /* background-position: center;
+     background-position: left;
+     background-position: right; 
+     background-position: top;  */
+    background-position:  bottom;  
+
+
+    background-position: right top;
+    background-position: left top;
+    background-position: right bottom;
+    background-position: right bottom;
+
+    background-attachment:fixed ;
+    background-attachment: scroll;
+} 
+
+
+
+
+
+
